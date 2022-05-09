@@ -1,0 +1,54 @@
+ <style type="text/css">
+   ul {
+  clear: both;
+  position: fixed;
+  display: block;
+  list-style-type: none;
+  right: -3.2em;
+  top: 15%;
+  -webkit-animation: slideright 1s forwards;
+  -webkit-animation-delay: 1.5s;
+  animation: slideright 1s forwards;
+  animation-delay: 1.5s; 
+}
+
+@keyframes slideright {
+  100% {
+    right: 0;
+  }
+}
+
+li {
+  margin-bottom: 40px;
+  margin-right: -20px;
+  padding: 15px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  background-color: rgba(30, 45, 45, 0.75);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+  -webkit-transition: width .5s, background-color .1s;
+  transition: width .5s, background-color .1s;
+
+}
+
+li a {
+  font-size: 19px;
+  text-transform: none;
+  text-align: center;
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+li:hover {
+  background-color: #fa782e;
+  color: #fff;
+}
+ </style>
+ <ul>
+  <li><a href="/products"> Home</a></li>
+  <li><a href="/filter">Search </a></li>
+    <li><a href="/about">Contact </a></li>
+</ul>
